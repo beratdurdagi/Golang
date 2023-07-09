@@ -14,7 +14,7 @@ Bu, Gorilla Mux yönlendiricisini kullanarak Golang ile uygulanan basit bir film
 
 3. Bağımlılıkları yükleyin: 
    ```bash 
-  go mod download
+   go mod download
 
 ## Kullanım
 
