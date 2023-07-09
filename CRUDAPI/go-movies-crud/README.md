@@ -8,9 +8,13 @@ Bu, Gorilla Mux yönlendiricisini kullanarak Golang ile uygulanan basit bir film
 
    ```bash
    git clone https://github.com/karalakrepp/golang.git
-2. Proje dizinine gidin: cd golang
+2. Proje dizinine gidin: 
+    ```bash 
+   cd golang
 
-3. Bağımlılıkları yükleyin: go mod download
+3. Bağımlılıkları yükleyin: 
+   ```bash 
+  go mod download
 
 ## Kullanım
 
