@@ -14,7 +14,9 @@ Bu, Gorilla Mux yönlendiricisini kullanarak Golang ile uygulanan basit bir film
 
 ## Kullanım
 
-1. Sunucuyu başlatın:```bash  go run main.go
+1. Sunucuyu başlatın:
+   ```bash  
+   go run main.go
 
 
 Sunucu varsayılan olarak 8000 numaralı portta çalışacaktır. PORT ortam değişkenini ayarlayarak özel bir port belirleyebilirsiniz.
