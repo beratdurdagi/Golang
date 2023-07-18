@@ -7,7 +7,7 @@ import (
 	_ "github.com/lib/pq"
 )
 
-const DATABASE_URL = "postgres://postgres:Password@HOSTNAME:PORT/GolangBank?sslmode=disable"
+const DATABASE_URL = "postgres://postgres:Password@HOSTNAME:PORT/DBNAME?sslmode=disable"
 
 type Storage interface {
 	CreateAccount(*Account) error
