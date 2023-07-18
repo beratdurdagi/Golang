@@ -7,7 +7,7 @@ import (
 	_ "github.com/lib/pq"
 )
 
-const DATABASE_URL = "postgres://postgres:12345678@localhost:5433/GolangBank?sslmode=disable"
+const DATABASE_URL = "postgres://postgres:Password@HOSTNAME:PORT/GolangBank?sslmode=disable"
 
 type Storage interface {
 	CreateAccount(*Account) error
@@ -59,7 +59,7 @@ func (s *PostgresStore) createAccountTable() error {
 
 func (s *PostgresStore) CreateAccount(account *Account) error {
 
-	query := `INSERT INTO ACCOUNT(first_name,last_name,password,number,balance,created_at) values ($1, $2, $3, $4, $5,$6)`
+	query := `INSERT INTO ACCOUNT(first_name,last_name,password,number,balance,created_at) values ($1, $2, $3, $4, $5, $6)`
 
 	_, err := s.db.Query(query,
 		account.FirstName,
