@@ -22,7 +22,7 @@ type Storer interface {
 
 func DBSet() *DB {
 
-	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb+srv://juniordev:Berat123456@golang.0nzza7m.mongodb.net/?retryWrites=true&w=majority"))
+	client, err := mongo.NewClient(options.Client().ApplyURI("YOUR_MONGO_URL"))
 	if err != nil {
 		log.Fatal(err)
 	}
